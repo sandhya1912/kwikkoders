@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-family:sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+span{
+    font-size: .9rem;
+    color: #757373;
+}
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49)
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 1vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0.15);
+    position: fixed;
+    width: 100%;
+    background-color: #ffff;
+}
+nav img{
+    width: 80px;
+    cursor: pointer;
+}
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+nav .navigation ul li a:hover{
+    color: rgb(247, 61, 185);
+}
+/* home */
+#home{
+    background-image: linear-gradient(rgb(9,5,54,0.3),rgb(5,4,46,0.7)),url(1/images/back.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding-top: 40px;
+}
+#home h2{
+    color: #ffff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+ 
+}
+#home p{
+    color: #ffff;
+    font-size: 0.9rem;
+   line-height: 25px;
+    width: 50%;
+ 
+}
+#home .btn{
+    margin-top: 30px;
+
+}
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px ;
+    background-color: #ffff;
+    font-weight: 600;
+    border-radius: 5px ;
+}
+#home a.blue{
+    color: #ffff;
+    background:  rgb(245, 8, 146);
+    transition: 0.3s ease;
+}
+#home a.blue:hover{
+    color: rgb(21, 21, 100);;
+    background: #ffff;
+}
+#home a.yellow{
+    color: #ffff;
+    background: rgba(226, 10, 82, 0.945);
+    transition: 0.3s ease;
+}
+#home a.yellow:hover{
+    color: rgb(21, 21, 100);;
+    background: #ffff;
+}
+/* features */
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+
+#features .fea-base{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+
+}
+    
+
+
+#features .fea-box{
+    background: #f8f8fd;
+    text-align: start;
+}
+#features .fea-box i{
+    font-size: 2.3rem;
+    color: rgb(44,44,80);
+
+}
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46,46,59);
+    padding: 13px 0 7px 0;
+}
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70,70,87);
+   
+}
+/* .course */
+#course{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+#course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+
+}
+#course .courses{
+    text-align: start;
+    background: #f8f8fd;
+    height: 100%;
+  
+}
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover ;
+    background-position: center;
+
+}
+
+#course .courses .details{
+    padding: 15px 15px 0 15px;
+}
+#course .courses .details{
+    color: #fdc93b;
+    font-size: .9rem;
+}
+#course .courses .cost{
+    background-color: rgb(74,74,136);
+    color: #ffff;
+    line-height: 40px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border-radius: 20%;
+    right: 15px;
+    bottom: 5px;
+    position:static;
+   
+}
+#registration{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168,0.5),rgba(81,91,233,0.5)),url(1/images/signup.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+}
+#registration .reminder{
+    color: #ffff;
+}
+#registration .reminder h1{
+    color: #ffff;
+
+     
+}
+#registration .form{
+    background: #ffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px ;
+    box-shadow:0 8px 32px 0 rgba(38,38,135,0.35);
+}
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px ;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+}
+#registration .form .btn{
+    margin-top: 20px;
+}
+#registration .form a.yellow{
+
+        text-decoration: none;
+        font-size: 0.9rem;
+        padding: 13px 35px ;
+        background-color: #ffff;
+        font-weight: 600;
+        border-radius: 5px ;
+        color: #ffff;
+        background: rgba(226, 10, 82, 0.945);
+       transition: 0.3s ease;
+}
+#registration .form a.yellow:hover{
+    color:#fff;
+    
+    background: rgb(21, 21, 100);
+
+
+
+
+}
+/* footer */
+footer{
+    padding: 5vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+footer .footer-col{
+    padding-bottom: 40px;
+
+}
+footer h3{
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+footer li{
+    list-style: none;
+    color: #a6acb1;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s easy;
+   
+
+}
+footer li a{
+text-decoration: none;
+}
+footer li:hover{
+    color: #fff;
+}
+footer .logo p{
+    color:  #a6acb1;
+    margin-top: 20px;
+}
+footer .logo p:hover{
+color: #fff;
+}
+footer .icon{
+    color: #a6acb1;;
+    margin-top: 20px ;
+  margin-left:20px;
+}
+footer .icon:hover{
+    color: #fff;
+}
